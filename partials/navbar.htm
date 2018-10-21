@@ -1,0 +1,45 @@
+description = "Navigation bar"
+
+[viewBag]
+==
+<style>
+.icon {
+    color: rgb(210, 36, 20);
+    icon-size:20px;
+}
+li {
+    font-family: nasim;
+}
+p {
+    font-family: nasim;
+}
+</style>
+<section id="navbar" class="m-b-3">
+	<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="{{ 'author'|page }}"><img src="http://memajco.com/storage/app/media/image/imageedit_2_3711610514.jpg"  width="120" height="60"></a>
+			<ul class="nav navbar-nav pull-xs-right">
+			
+			
+				<li class="nav-item{{ this.page.baseFileName == 'contact' ? ' active' }}">
+					<a class="nav-link" href="{{ 'contact'|page }}">تماس با ما <i class="fa fa-phone icon"></i> </a>
+					
+					
+			
+				<li class="nav-item{{ this.page.baseFileName == 'about' ? ' active' }}">
+					<a class="nav-link" href="{{ 'about'|page }}">در باره ما <i class="fa fa-users icon"></i></a>
+					
+				
+			
+				<li class="nav-item{{ this.page.baseFileName == 'features' ? ' active' }}">
+					<a class="nav-link" href="{{ 'features'|page }}">گالری <i class="fa fa-photo icon"></i></a>
+			</li>
+				<li class="nav-item{{ this.page.baseFileName == 'author' ? ' active' }}">
+					<a class="nav-link" href="{{ 'author'|page }}">صفحه اصلی<i class="fa fa-home icon"></i></a>
+					
+					
+				</li>
+			</ul>
+		</div>
+	</nav>
+</section>
